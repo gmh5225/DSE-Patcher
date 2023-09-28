@@ -63,14 +63,6 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="32.ico">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="16.ico">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Manifest Include="DSE-Patcher.exe.manifest">
       <Filter>Resource Files</Filter>
     </Manifest>

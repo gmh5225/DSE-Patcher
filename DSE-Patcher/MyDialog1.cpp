@@ -95,7 +95,7 @@ int MyDlg1TooltipSetMultilineText(LPARAM lParam)
 	else if((HWND)pInfo->hdr.idFrom == g.Dlg1.hButton3)
 	{
 		pInfo->lpszText = "Restore \"Driver Signature Enforcement\":\nSets the variable to \"DSE Original Value\".\n\n"
-						  "Attention:\nThe \"DSE Original Value\" is retrieved\nonly one time on startup of "APPNAME"!";
+						  "Attention:\nThe \"DSE Original Value\" is retrieved\nonly one time on startup of !";
 	}
 	else if((HWND)pInfo->hdr.idFrom == g.Dlg1.hCombo1)
 	{
@@ -134,7 +134,7 @@ int MyDlg1OnInitDialog(HWND hwnd)
 	SendMessage(hwnd,WM_SETICON,ICON_SMALL,(LPARAM)hIcon2);
 
 	// set dialog title
-	SendMessage(hwnd,WM_SETTEXT,0,(LPARAM)APPNAME" "VERSION" "BUILD);
+	SendMessage(hwnd,WM_SETTEXT,0,(LPARAM)APPNAME);
 
 	// create status bar with two parts
 	RECT rect;

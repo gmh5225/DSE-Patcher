@@ -17,8 +17,7 @@
 // You should have received a copy of the GNU General Public License
 // along with DSE-Patcher. If not, see <http://www.gnu.org/licenses/>.
 
-#ifndef _MYFUNCTIONS
-#define _MYFUNCTIONS
+#pragma once
 
 // Attention: The library file msvcrt.lib is copied from "C:\WinDDK\7600.16385.1\lib\Crt\amd64".
 // This import library reduces the executable size and we have not to install any Microsoft
@@ -198,5 +197,5 @@ typedef struct _GLOBALS
 int MyInitVulnerableDrivers(VULNERABLE_DRIVER *vd,DWORD dwElements);
 DWORD WINAPI MyThreadProc1(PVOID pvoid);
 
-#endif // _MYFUNCTIONS
+
 
